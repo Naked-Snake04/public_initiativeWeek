@@ -36,11 +36,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       style: optionStyle,
     ),
     Text(
-      'Index 1: Business',
+      'Please Stand By',
       style: optionStyle,
     ),
     Text(
-      'Index 2: School',
+      'Please Stand By',
       style: optionStyle,
     ),
   ];
@@ -64,15 +64,15 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Home',
+            label: 'Главная',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            label: 'Business',
+            icon: Icon(Icons.map),
+            label: 'Карта',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'School',
+            icon: Icon(Icons.info),
+            label: 'О проекте',
           ),
         ],
         currentIndex: _selectedIndex,
