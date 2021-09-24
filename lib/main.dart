@@ -60,6 +60,13 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          // ignore: avoid_print
+          print('Регистрация');
+        },
+        child: const Text('Регистрация'),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
