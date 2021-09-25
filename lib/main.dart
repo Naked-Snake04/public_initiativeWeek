@@ -110,26 +110,43 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 } */
 
 class MainScreen extends StatelessWidget {
+  const MainScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return Center(
-        child: Container(
+    return Scaffold(
+        floatingActionButton: Align(
+            alignment: const Alignment(-0.473, 0.970),
+            child: FloatingActionButton(
+              backgroundColor: Colors.transparent,
+              focusColor: Colors.transparent,
+              mini: true,
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const SecondScreen()));
+              },
+            )),
+        body: Container(
             width: double.infinity,
             height: double.infinity,
             child: const Image(
                 height: double.infinity,
                 width: double.infinity,
-                image: AssetImage('assets/images/zadnik2.jpg'))));
+                image: AssetImage('assets/images/1page.png'))));
   }
 }
 
 class SecondScreen extends StatelessWidget {
+  const SecondScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Второе окно')),
       body: Center(
-          child: RaisedButton(
+          child: ElevatedButton(
               onPressed: () {
                 Navigator.pop(context);
               },
