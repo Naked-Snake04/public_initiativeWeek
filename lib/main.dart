@@ -1,3 +1,5 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -30,6 +32,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
+
   static const List<Widget> _widgetOptions = <Widget>[
     Text(
       'Зарегестрируйтесь',
@@ -51,6 +54,21 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     });
   }
 
+  /*  @override
+  void initState() {
+    super.initState();
+
+    upload();
+  }
+
+  //проверка добавляется ли в бд
+  Future upload() async {
+    await Firebase.initializeApp();
+
+    final refUser = FirebaseFirestore.instance.collection('user').doc();
+    await refUser.set({'username': 'Lox'});
+  }
+ */
   @override
   Widget build(BuildContext context) {
     return Scaffold(
