@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-
+/*
 void main() => runApp(const MyApp());
 
 /// This is the main application widget.
@@ -106,4 +106,35 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       ),
     );
   }
+} */
+
+class MainScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Image.asset('assets/images/lake.jpg'),
+    );
+  }
+}
+
+class SecondScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Второе окно')),
+      body: Center(
+          child: RaisedButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: Text('Назад'))),
+    );
+  }
+}
+
+void main() {
+  runApp(MaterialApp(initialRoute: '/', routes: {
+    '/': (BuildContext context) => MainScreen(),
+    '/second': (BuildContext context) => SecondScreen()
+  }));
 }
