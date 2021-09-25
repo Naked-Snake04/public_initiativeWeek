@@ -111,9 +111,14 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Image.asset('assets/images/lake.jpg'),
-    );
+    return Center(
+        child: Container(
+            width: double.infinity,
+            height: double.infinity,
+            child: const Image(
+                height: double.infinity,
+                width: double.infinity,
+                image: AssetImage('assets/images/zadnik2.jpg'))));
   }
 }
 
