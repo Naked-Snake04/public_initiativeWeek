@@ -6,8 +6,10 @@ import './registration6.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Registration5 extends StatelessWidget {
+  final String volonteer;
   Registration5({
     Key? key,
+    this.volonteer = "Хотите стать волонтёром?",
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -182,7 +184,7 @@ class Registration5 extends StatelessWidget {
                 Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('assets/images/continue.png'),
                   fit: BoxFit.fill,
                 ),
               ),
@@ -203,7 +205,7 @@ class Registration5 extends StatelessWidget {
             Pin(size: 337.0, start: 190.0),
             Pin(size: 43.0, middle: 0.4195),
             child: Text(
-              'Хотите стать волонтёром?',
+              volonteer,
               style: TextStyle(
                 fontFamily: 'Segoe UI',
                 fontSize: 32,

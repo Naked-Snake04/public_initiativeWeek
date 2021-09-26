@@ -5,10 +5,10 @@ import 'package:adobe_xd/page_link.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Registration4 extends StatelessWidget {
-  final String OkText;
+  final String oktext;
   Registration4({
     Key? key,
-    this.OkText = 'Ок',
+    this.oktext = 'Ок',
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -210,7 +210,7 @@ class Registration4 extends StatelessWidget {
                 Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('assets/images/continue.png'),
                   fit: BoxFit.fill,
                 ),
               ),
@@ -275,7 +275,7 @@ class Registration4 extends StatelessWidget {
                 ),
               ],
               child: Text(
-                OkText,
+                oktext,
                 style: TextStyle(
                   fontFamily: 'Segoe UI',
                   fontSize: 32,
