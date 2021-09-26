@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
-import './sozdanie_inicistive.dart';
+import './l_k1.dart';
 import 'package:adobe_xd/page_link.dart';
+import './sozdanie_inicistive.dart';
 import './mainpage3.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -66,10 +67,20 @@ class Bid extends StatelessWidget {
             Pin(size: 24.6, start: 33.0),
             child:
                 // Adobe XD layer: 'k54' (shape)
-                SvgPicture.string(
-              _svg_c5bmvz,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
+                PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => LK1(),
+                ),
+              ],
+              child: SvgPicture.string(
+                _svg_c5bmvz,
+                allowDrawingOutsideViewBox: true,
+                fit: BoxFit.fill,
+              ),
             ),
           ),
           Pinned.fromPins(
