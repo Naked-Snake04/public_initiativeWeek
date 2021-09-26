@@ -49,5 +49,3 @@ app.*.map.json
 /android/
 
 /build/      
-build/flutter_assets/AssetManifest.json
-build/flutter_assets/NOTICES
