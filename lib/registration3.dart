@@ -311,7 +311,9 @@ class Registration3 extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => Registration5(),
+                  pageBuilder: () => Registration5(
+                    volonteer: 'Хотите стать волонтёром?',
+                  ),
                 ),
               ],
               child: SvgPicture.string(

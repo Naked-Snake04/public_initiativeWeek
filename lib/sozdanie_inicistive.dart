@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
-import './mainpage3.dart';
+import './l_k1.dart';
 import 'package:adobe_xd/page_link.dart';
+import './mainpage3.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class SozdanieInicistive extends StatelessWidget {
@@ -15,123 +16,110 @@ class SozdanieInicistive extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Pinned.fromPins(
-            Pin(size: 104.3, middle: 0.3598),
-            Pin(size: 23.4, start: 31.4),
+            Pin(start: 44.0, end: 15.0),
+            Pin(start: 23.8, end: 82.0),
             child:
-                // Adobe XD layer: 'k5' (shape)
-                SvgPicture.string(
-              _svg_mn143,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 185.7, middle: 0.5613),
-            Pin(size: 27.8, start: 31.4),
-            child:
-                // Adobe XD layer: 'k6' (shape)
-                SvgPicture.string(
-              _svg_b3ceo,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 123.1, middle: 0.7674),
-            Pin(size: 23.1, start: 33.7),
-            child:
-                // Adobe XD layer: 'k7' (shape)
-                SvgPicture.string(
-              _svg_ojjba,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 248.1, end: 39.9),
-            Pin(size: 24.6, start: 33.0),
-            child:
-                // Adobe XD layer: 'k54' (shape)
-                SvgPicture.string(
-              _svg_c5bmvz,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 461.0, start: 44.0),
-            Pin(size: 58.2, start: 23.8),
-            child: PageLink(
-              links: [
-                PageLinkInfo(
-                  transition: LinkTransition.Fade,
-                  ease: Curves.easeOut,
-                  duration: 0.3,
-                  pageBuilder: () => Mainpage3(),
-                ),
-              ],
-              child: Stack(
-                children: <Widget>[
-                  Pinned.fromPins(
-                    Pin(start: 65.8, end: 0.0),
-                    Pin(start: 0.0, end: 0.0),
-                    child:
-                        // Adobe XD layer: 'k91' (shape)
-                        SvgPicture.string(
-                      _svg_hr8cu9,
-                      allowDrawingOutsideViewBox: true,
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                  Pinned.fromPins(
-                    Pin(size: 52.3, start: 0.0),
-                    Pin(start: 1.3, end: 5.9),
-                    child:
-                        // Adobe XD layer: 'k92' (shape)
-                        SvgPicture.string(
-                      _svg_mpxlos,
-                      allowDrawingOutsideViewBox: true,
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 892.0, end: 15.0),
-            Pin(size: 301.0, start: 98.0),
-            child:
-                // Adobe XD layer: 'img4' (shape)
-                Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: const AssetImage('assets/images/as.png'),
-                  fit: BoxFit.fill,
-                ),
-                border: Border.all(width: 3.0, color: const Color(0xff3c64b1)),
-              ),
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 880.0, start: 80.0),
-            Pin(start: 98.0, end: 82.0),
-            child: Stack(
+                // Adobe XD layer: 'sozdanieInicistive' (group)
+                Stack(
               children: <Widget>[
                 Pinned.fromPins(
-                  Pin(start: 0.0, end: 0.0),
-                  Pin(start: 0.0, end: 0.0),
-                  child: Stack(
+                  Pin(start: 0.0, end: 24.9),
+                  Pin(size: 58.2, start: 0.0),
+                  child:
+                      // Adobe XD layer: 'TopButtons' (group)
+                      Stack(
                     children: <Widget>[
                       Pinned.fromPins(
+                        Pin(size: 104.3, middle: 0.3518),
+                        Pin(size: 23.4, start: 7.6),
+                        child:
+                            // Adobe XD layer: 'k5' (shape)
+                            SvgPicture.string(
+                          _svg_mn143,
+                          allowDrawingOutsideViewBox: true,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 185.7, middle: 0.5631),
+                        Pin(size: 27.8, start: 7.6),
+                        child:
+                            // Adobe XD layer: 'k6' (shape)
+                            SvgPicture.string(
+                          _svg_b3ceo,
+                          allowDrawingOutsideViewBox: true,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 123.1, middle: 0.7793),
+                        Pin(size: 23.1, middle: 0.2823),
+                        child:
+                            // Adobe XD layer: 'k7' (shape)
+                            SvgPicture.string(
+                          _svg_ojjba,
+                          allowDrawingOutsideViewBox: true,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 248.1, end: 0.0),
+                        Pin(size: 24.6, middle: 0.2724),
+                        child:
+                            // Adobe XD layer: 'k54' (shape)
+                            PageLink(
+                          links: [
+                            PageLinkInfo(
+                              transition: LinkTransition.Fade,
+                              ease: Curves.easeOut,
+                              duration: 0.3,
+                              pageBuilder: () => LK1(),
+                            ),
+                          ],
+                          child: SvgPicture.string(
+                            _svg_c5bmvz,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 461.0, start: 0.0),
                         Pin(start: 0.0, end: 0.0),
-                        Pin(start: 0.0, end: 0.0),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(5.0),
-                            color: const Color(0xffffffff),
-                            border: Border.all(
-                                width: 3.0, color: const Color(0xff3c64b1)),
+                        child: PageLink(
+                          links: [
+                            PageLinkInfo(
+                              transition: LinkTransition.Fade,
+                              ease: Curves.easeOut,
+                              duration: 0.3,
+                              pageBuilder: () => Mainpage3(),
+                            ),
+                          ],
+                          child: Stack(
+                            children: <Widget>[
+                              Pinned.fromPins(
+                                Pin(start: 65.8, end: 0.0),
+                                Pin(start: 0.0, end: 0.0),
+                                child:
+                                    // Adobe XD layer: 'k91' (shape)
+                                    SvgPicture.string(
+                                  _svg_hr8cu9,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 52.3, start: 0.0),
+                                Pin(start: 1.3, end: 5.9),
+                                child:
+                                    // Adobe XD layer: 'k92' (shape)
+                                    SvgPicture.string(
+                                  _svg_mpxlos,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ),
@@ -139,171 +127,216 @@ class SozdanieInicistive extends StatelessWidget {
                   ),
                 ),
                 Pinned.fromPins(
-                  Pin(size: 287.3, start: 46.9),
-                  Pin(size: 30.8, start: 118.7),
-                  child: SvgPicture.string(
-                    _svg_ofxwxs,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 240.8, start: 46.9),
-                  Pin(size: 23.1, middle: 0.242),
-                  child: SvgPicture.string(
-                    _svg_qej2a9,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 145.8, start: 45.4),
-                  Pin(size: 23.4, middle: 0.3467),
-                  child: SvgPicture.string(
-                    _svg_gvvq,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 249.4, start: 47.0),
-                  Pin(size: 29.3, middle: 0.4551),
-                  child: SvgPicture.string(
-                    _svg_d7jjh,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 304.6, middle: 0.4855),
-                  Pin(size: 35.0, start: 38.2),
-                  child: SvgPicture.string(
-                    _svg_pwd7lw,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(start: 20.5, end: 68.5),
-                  Pin(size: 59.0, start: 101.5),
-                  child: Container(
+                  Pin(size: 892.0, end: 0.0),
+                  Pin(size: 301.0, start: 74.2),
+                  child:
+                      // Adobe XD layer: 'img4' (shape)
+                      Container(
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(19.5),
+                      image: DecorationImage(
+                        image: const AssetImage('assets/images/as.png'),
+                        fit: BoxFit.fill,
+                      ),
                       border: Border.all(
-                          width: 1.0, color: const Color(0xff3c64b1)),
+                          width: 3.0, color: const Color(0xff3c64b1)),
                     ),
                   ),
                 ),
                 Pinned.fromPins(
-                  Pin(start: 20.5, end: 68.5),
-                  Pin(size: 59.0, middle: 0.2301),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(19.5),
-                      border: Border.all(
-                          width: 1.0, color: const Color(0xff3c64b1)),
-                    ),
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(start: 20.5, end: 68.5),
-                  Pin(size: 59.0, middle: 0.3395),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(19.5),
-                      border: Border.all(
-                          width: 1.0, color: const Color(0xff3c64b1)),
-                    ),
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(start: 20.5, end: 68.5),
-                  Pin(size: 59.0, end: 116.5),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(19.5),
-                      border: Border.all(
-                          width: 1.0, color: const Color(0xff3c64b1)),
-                    ),
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(start: 20.5, end: 68.5),
-                  Pin(size: 59.0, end: 32.5),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(19.5),
-                      border: Border.all(
-                          width: 1.0, color: const Color(0xff3c64b1)),
-                    ),
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(start: 20.5, end: 68.5),
-                  Pin(size: 314.0, middle: 0.6442),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(19.5),
-                      border: Border.all(
-                          width: 1.0, color: const Color(0xff3c64b1)),
-                    ),
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 184.0, end: 68.5),
-                  Pin(size: 59.0, start: 101.5),
-                  child: SvgPicture.string(
-                    _svg_ca3tx,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 31.4, middle: 0.8294),
-                  Pin(size: 11.4, start: 122.7),
-                  child: SvgPicture.string(
-                    _svg_uunfyz,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 34.0, middle: 0.4953),
-                  Pin(size: 39.0, end: 127.0),
-                  child: SvgPicture.string(
-                    _svg_gifor,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 42.2, middle: 0.4941),
-                  Pin(size: 38.5, end: 43.7),
-                  child: SvgPicture.string(
-                    _svg_xwyelf,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
+                  Pin(size: 880.0, start: 36.0),
+                  Pin(start: 74.2, end: 0.0),
+                  child: Stack(
+                    children: <Widget>[
+                      Pinned.fromPins(
+                        Pin(start: 0.0, end: 0.0),
+                        Pin(start: 0.0, end: 0.0),
+                        child: Stack(
+                          children: <Widget>[
+                            Pinned.fromPins(
+                              Pin(start: 0.0, end: 0.0),
+                              Pin(start: 0.0, end: 0.0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(5.0),
+                                  color: const Color(0xffffffff),
+                                  border: Border.all(
+                                      width: 3.0,
+                                      color: const Color(0xff3c64b1)),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 287.3, start: 46.9),
+                        Pin(size: 30.8, start: 118.7),
+                        child: SvgPicture.string(
+                          _svg_ofxwxs,
+                          allowDrawingOutsideViewBox: true,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 240.8, start: 46.9),
+                        Pin(size: 23.1, middle: 0.242),
+                        child: SvgPicture.string(
+                          _svg_qej2a9,
+                          allowDrawingOutsideViewBox: true,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 145.8, start: 45.4),
+                        Pin(size: 23.4, middle: 0.3467),
+                        child: SvgPicture.string(
+                          _svg_gvvq,
+                          allowDrawingOutsideViewBox: true,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 249.4, start: 47.0),
+                        Pin(size: 29.3, middle: 0.4551),
+                        child: SvgPicture.string(
+                          _svg_d7jjh,
+                          allowDrawingOutsideViewBox: true,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 304.6, middle: 0.4855),
+                        Pin(size: 35.0, start: 38.2),
+                        child: SvgPicture.string(
+                          _svg_pwd7lw,
+                          allowDrawingOutsideViewBox: true,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(start: 20.5, end: 68.5),
+                        Pin(size: 59.0, start: 101.5),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(19.5),
+                            border: Border.all(
+                                width: 1.0, color: const Color(0xff3c64b1)),
+                          ),
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(start: 20.5, end: 68.5),
+                        Pin(size: 59.0, middle: 0.2301),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(19.5),
+                            border: Border.all(
+                                width: 1.0, color: const Color(0xff3c64b1)),
+                          ),
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(start: 20.5, end: 68.5),
+                        Pin(size: 59.0, middle: 0.3395),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(19.5),
+                            border: Border.all(
+                                width: 1.0, color: const Color(0xff3c64b1)),
+                          ),
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(start: 20.5, end: 68.5),
+                        Pin(size: 59.0, end: 116.5),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(19.5),
+                            border: Border.all(
+                                width: 1.0, color: const Color(0xff3c64b1)),
+                          ),
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(start: 20.5, end: 68.5),
+                        Pin(size: 59.0, end: 32.5),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(19.5),
+                            border: Border.all(
+                                width: 1.0, color: const Color(0xff3c64b1)),
+                          ),
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(start: 20.5, end: 68.5),
+                        Pin(size: 314.0, middle: 0.6442),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(19.5),
+                            border: Border.all(
+                                width: 1.0, color: const Color(0xff3c64b1)),
+                          ),
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 184.0, end: 68.5),
+                        Pin(size: 59.0, start: 101.5),
+                        child: SvgPicture.string(
+                          _svg_ca3tx,
+                          allowDrawingOutsideViewBox: true,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 31.4, middle: 0.8294),
+                        Pin(size: 11.4, start: 122.7),
+                        child: SvgPicture.string(
+                          _svg_uunfyz,
+                          allowDrawingOutsideViewBox: true,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 41.3, end: 88.8),
+                        Pin(size: 26.1, start: 115.1),
+                        child: SvgPicture.string(
+                          _svg_mc5j58,
+                          allowDrawingOutsideViewBox: true,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 15.2, middle: 0.7416),
+                        Pin(size: 9.6, start: 123.3),
+                        child: SvgPicture.string(
+                          _svg_pvy6xr,
+                          allowDrawingOutsideViewBox: true,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 34.0, middle: 0.4953),
+                        Pin(size: 39.0, end: 127.0),
+                        child: SvgPicture.string(
+                          _svg_gifor,
+                          allowDrawingOutsideViewBox: true,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(size: 42.2, middle: 0.4941),
+                        Pin(size: 38.5, end: 43.7),
+                        child: SvgPicture.string(
+                          _svg_xwyelf,
+                          allowDrawingOutsideViewBox: true,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 41.3, middle: 0.4418),
-            Pin(size: 26.1, middle: 0.2022),
-            child: SvgPicture.string(
-              _svg_aevnef,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 15.2, middle: 0.3787),
-            Pin(size: 9.6, middle: 0.2068),
-            child: SvgPicture.string(
-              _svg_ow8ich,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
             ),
           ),
         ],
@@ -338,11 +371,11 @@ const String _svg_ca3tx =
     '<svg viewBox="629.5 101.5 184.0 59.0" ><path  d="M 629.5 101.5 L 794 101.5 C 804.77001953125 101.5 813.5 110.2300033569336 813.5 121 L 813.5 141 C 813.5 151.7700042724609 804.77001953125 160.5 794 160.5 L 629.5 160.5 L 629.5 101.5 Z" fill="#7a5620" stroke="#7a5620" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
 const String _svg_uunfyz =
     '<svg viewBox="705.8 122.7 31.4 11.4" ><path transform="translate(-2.92, -2.88)" d="M 715.5159912109375 137 L 715.5159912109375 132.3670043945312 L 712.2420043945312 132.3670043945312 L 709.7579956054688 137 L 708.718994140625 137 L 711.3980102539062 132.1020050048828 C 710.6640014648438 131.8459930419922 710.10400390625 131.4609985351562 709.718994140625 130.9450073242188 C 709.3330078125 130.4299926757812 709.1409912109375 129.7989959716797 709.1409912109375 129.0549926757812 C 709.1409912109375 127.9820022583008 709.47900390625 127.1429977416992 710.156005859375 126.5390014648438 C 710.8389892578125 125.9300003051758 711.7969970703125 125.625 713.031005859375 125.625 L 716.4840087890625 125.625 L 716.4840087890625 137 L 715.5159912109375 137 Z M 710.1019897460938 129.0469970703125 C 710.1019897460938 129.7969970703125 710.3359985351562 130.4010009765625 710.8049926757812 130.8589935302734 C 711.2789916992188 131.3179931640625 711.9299926757812 131.5469970703125 712.7579956054688 131.5469970703125 L 715.5159912109375 131.5469970703125 L 715.5159912109375 126.4449996948242 L 713 126.4449996948242 C 712.072998046875 126.4449996948242 711.3569946289062 126.6719970703125 710.8519897460938 127.125 C 710.3519897460938 127.572998046875 710.1019897460938 128.2140045166016 710.1019897460938 129.0469970703125 Z M 723.6799926757812 135.7339935302734 L 727.0390014648438 128.5469970703125 L 728.1950073242188 128.5469970703125 L 728.1950073242188 137 L 727.2579956054688 137 L 727.2579956054688 130.0619964599609 L 724.0079956054688 137 L 723.343994140625 137 L 720.031005859375 129.906005859375 L 720.031005859375 137 L 719.1019897460938 137 L 719.1019897460938 128.5469970703125 L 720.3280029296875 128.5469970703125 L 723.6799926757812 135.7339935302734 Z M 731.7340087890625 131.6170043945312 L 734.1719970703125 131.6170043945312 C 734.7969970703125 131.6170043945312 735.343994140625 131.7319946289062 735.81201171875 131.9609985351562 C 736.2860107421875 132.1849975585938 736.6430053710938 132.4969940185547 736.8829956054688 132.8979949951172 C 737.1279907226562 133.2989959716797 737.25 133.7660064697266 737.25 134.2969970703125 C 737.25 135.1150054931641 736.968994140625 135.77099609375 736.406005859375 136.2660064697266 C 735.8489990234375 136.7550048828125 735.093994140625 137 734.1409912109375 137 L 730.8049926757812 137 L 730.8049926757812 128.5469970703125 L 731.7340087890625 128.5469970703125 L 731.7340087890625 131.6170043945312 Z M 731.7340087890625 132.4140014648438 L 731.7340087890625 136.2109985351562 L 734.156005859375 136.2109985351562 C 734.8280029296875 136.2109985351562 735.35400390625 136.0420074462891 735.7340087890625 135.7030029296875 C 736.1199951171875 135.3650054931641 736.31201171875 134.9010009765625 736.31201171875 134.3119964599609 C 736.31201171875 133.75 736.125 133.2969970703125 735.75 132.9530029296875 C 735.3800048828125 132.60400390625 734.8720092773438 132.4239959716797 734.2269897460938 132.4140014648438 L 731.7340087890625 132.4140014648438 Z M 740.1170043945312 137 L 739.1799926757812 137 L 739.1799926757812 128.5469970703125 L 740.1170043945312 128.5469970703125 L 740.1170043945312 137 Z" fill="#ffffff" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
+const String _svg_mc5j58 =
+    '<svg viewBox="752.0 115.1 41.3 26.1" ><path transform="translate(751.63, 114.12)" d="M 20.99930000305176 12.3444995880127 C 20.22520065307617 12.3444995880127 19.46689987182617 12.36789989471436 18.71610069274902 12.39809989929199 L 17.52540016174316 3.418689966201782 L 17.6560001373291 3.387749910354614 L 17.44429969787598 0.9375 L 15.61279964447021 0.9375 L 12.8435001373291 1.109380006790161 L 13.12189960479736 3.691629886627197 L 13.76679992675781 3.716370105743408 L 14.65439987182617 11.54979991912842 L 7.58480978012085 13.56550025939941 L 6.514379978179932 5.592559814453125 L 6.643630027770996 5.552690029144287 L 6.432559967041016 3.102440118789673 L 4.616879940032959 3.102440118789673 L 1.830440044403076 3.274310111999512 L 2.17074990272522 5.809810161590576 L 2.755810022354126 5.864809989929199 L 3.977499961853027 15.56270027160645 C 1.710809946060181 16.74169921875 0.375 18.16559982299805 0.375 19.70420074462891 C 0.375 22.15929985046387 6.023499965667725 27.0625 20.99930000305176 27.0625 C 32.39049911499023 27.0625 41.625 23.76869964599609 41.625 19.70420074462891 C 41.625 15.63969993591309 32.39049911499023 12.3444995880127 20.99930000305176 12.3444995880127 Z M 15.07509994506836 12.14439964294434 C 15.07509994506836 12.14439964294434 15.13360023498535 12.13619995117188 15.22089958190918 12.13619995117188 C 15.4394998550415 12.13619995117188 15.84099960327148 12.18780040740967 15.95919990539551 12.55010032653809 C 16.19709968566895 13.28159999847412 15.52270030975342 13.71399974822998 15.52270030975342 13.71399974822998 L 7.908629894256592 15.98480033874512 L 7.676249980926514 14.25370025634766 L 15.07509994506836 12.14439964294434 Z M 7.097370147705078 23.8484001159668 L 4.769499778747559 6.05456018447876 L 4.957880020141602 6.071750164031982 L 5.848189830780029 5.797440052032471 L 8.324560165405273 24.27809906005859 C 8.039939880371094 24.18390083312988 7.196370124816895 23.88349914550781 7.097370147705078 23.8484001159668 Z M 16.68659973144531 22.03409957885742 L 9.027190208435059 24.31800079345703 L 8.79481029510498 22.58690071105957 L 16.23839950561523 20.46389961242676 C 16.23839950561523 20.46389961242676 16.29680061340332 20.45560073852539 16.38409996032715 20.45560073852539 C 16.6033992767334 20.45560073852539 17.0048999786377 20.50720024108887 17.12249946594238 20.86949920654297 C 17.36039924621582 21.60169982910156 16.68659973144531 22.03409957885742 16.68659973144531 22.03409957885742 Z M 18.38750076293945 25.68540000915527 L 15.76469993591309 3.793370008468628 L 15.92969989776611 3.800250053405762 L 16.85300064086914 3.580250024795532 L 19.77350044250488 25.71089935302734 C 19.34860038757324 25.7047004699707 18.82480049133301 25.6963996887207 18.38750076293945 25.68540000915527 Z" fill="#ffffff" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
+const String _svg_pvy6xr =
+    '<svg viewBox="643.4 123.3 15.2 9.6" ><path transform="translate(642.94, 122.91)" d="M 1.169420003890991 0.7191709876060486 C 1.56060004234314 0.3232420086860657 2.199769973754883 0.3228940069675446 2.591379880905151 0.718396008014679 L 8.000009536743164 6.180789947509766 L 13.40859985351562 0.718396008014679 C 13.80020046234131 0.3228940069675446 14.43939971923828 0.3232429921627045 14.83059978485107 0.7191720008850098 L 15.3056001663208 1.199959993362427 C 15.69050025939941 1.589490056037903 15.69050025939941 2.216089963912964 15.3056001663208 2.605609893798828 L 8.000009536743164 9.999950408935547 L 0.6943989992141724 2.605609893798828 C 0.3095490038394928 2.216089963912964 0.3095490038394928 1.589490056037903 0.6944000124931335 1.199959993362427 L 1.169420003890991 0.7191709876060486 Z" fill="#ffffff" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
 const String _svg_gifor =
     '<svg viewBox="421.0 734.0 34.0 39.0" ><path  d="M 451.4440002441406 737.5689697265625 C 446.7059936523438 732.8099975585938 438.9909973144531 732.8099975585938 434.2579956054688 737.5689697265625 L 421.1310119628906 750.7429809570312 C 421.0450134277344 750.8289794921875 421 750.9450073242188 421 751.0659790039062 C 421 751.18798828125 421.0450134277344 751.3040161132812 421.1310119628906 751.3900146484375 L 422.9869995117188 753.2540283203125 C 423.0719909667969 753.3389892578125 423.1860046386719 753.385986328125 423.3059997558594 753.385986328125 C 423.4259948730469 753.385986328125 423.5409851074219 753.3389892578125 423.625 753.2540283203125 L 436.7529907226562 740.0789794921875 C 438.3819885253906 738.4429931640625 440.5499877929688 737.5440063476562 442.85400390625 737.5440063476562 C 445.1570129394531 737.5440063476562 447.3250122070312 738.4429931640625 448.9490051269531 740.0789794921875 C 450.5790100097656 741.7160034179688 451.4739990234375 743.8930053710938 451.4739990234375 746.2020263671875 C 451.4739990234375 748.5150146484375 450.5790100097656 750.68798828125 448.9490051269531 752.323974609375 L 435.5710144042969 765.7559814453125 L 433.4030151367188 767.9329833984375 C 431.3760070800781 769.968994140625 428.0820007324219 769.968994140625 426.0549926757812 767.9329833984375 C 425.0740051269531 766.947998046875 424.5360107421875 765.6400146484375 424.5360107421875 764.2459716796875 C 424.5360107421875 762.8519897460938 425.0740051269531 761.5430297851562 426.0549926757812 760.5579833984375 L 439.3280029296875 747.2319946289062 C 439.6650085449219 746.8989868164062 440.1069946289062 746.7119750976562 440.5799865722656 746.7119750976562 L 440.5849914550781 746.7119750976562 C 441.0580139160156 746.7119750976562 441.4960021972656 746.8989868164062 441.8280029296875 747.2319946289062 C 442.1650085449219 747.5709838867188 442.3460083007812 748.0150146484375 442.3460083007812 748.489990234375 C 442.3460083007812 748.9600219726562 442.1589965820312 749.405029296875 441.8280029296875 749.7379760742188 L 430.97900390625 760.6240234375 C 430.8930053710938 760.7100219726562 430.8479919433594 760.8259887695312 430.8479919433594 760.947021484375 C 430.8479919433594 761.0679931640625 430.8930053710938 761.1849975585938 430.97900390625 761.27001953125 L 432.8349914550781 763.1339721679688 C 432.9190063476562 763.218994140625 433.0339965820312 763.2670288085938 433.1539916992188 763.2670288085938 C 433.2739868164062 763.2670288085938 433.3890075683594 763.218994140625 433.4729919433594 763.1339721679688 L 444.3169860839844 752.2429809570312 C 445.3179931640625 751.2379760742188 445.8659973144531 749.905029296875 445.8659973144531 748.4849853515625 C 445.8659973144531 747.0659790039062 445.31298828125 745.7269897460938 444.3169860839844 744.7269897460938 C 442.25 742.6510009765625 438.8900146484375 742.656005859375 436.822998046875 744.7269897460938 L 435.5360107421875 746.0250244140625 L 423.5549926757812 758.052978515625 C 422.7420043945312 758.864990234375 422.0969848632812 759.8300170898438 421.6589965820312 760.8939819335938 C 421.2200012207031 761.9580078125 420.9960021972656 763.0989990234375 421 764.2509765625 C 421 766.5900268554688 421.9100036621094 768.7869873046875 423.5549926757812 770.4390258789062 C 425.260009765625 772.14599609375 427.4930114746094 773 429.7260131835938 773 C 431.9590148925781 773 434.1929931640625 772.14599609375 435.8930053710938 770.4390258789062 L 451.4440002441406 754.8300170898438 C 453.7330017089844 752.5260009765625 455 749.4600219726562 455 746.2020263671875 C 455.0050048828125 742.9390258789062 453.7380065917969 739.8720092773438 451.4440002441406 737.5689697265625 Z" fill="#9b9b9b" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
 const String _svg_xwyelf =
     '<svg viewBox="416.0 817.8 42.2 38.5" ><path  d="M 421.5 823.3330078125 L 421.5 817.8330078125 L 425.1669921875 817.8330078125 L 425.1669921875 823.3330078125 L 430.6669921875 823.3330078125 L 430.6669921875 827 L 425.1669921875 827 L 425.1669921875 832.5 L 421.5 832.5 L 421.5 827 L 416 827 L 416 823.3330078125 L 421.5 823.3330078125 Z M 427 834.3330078125 L 427 828.8330078125 L 432.5 828.8330078125 L 432.5 823.3330078125 L 445.3330078125 823.3330078125 L 448.68798828125 827 L 454.5 827 C 456.5169982910156 827 458.1669921875 828.6500244140625 458.1669921875 830.6669921875 L 458.1669921875 852.6669921875 C 458.1669921875 854.6829833984375 456.5169982910156 856.3330078125 454.5 856.3330078125 L 425.1669921875 856.3330078125 C 423.1499938964844 856.3330078125 421.5 854.6829833984375 421.5 852.6669921875 L 421.5 834.3330078125 L 427 834.3330078125 Z M 439.8330078125 850.8330078125 C 444.8930053710938 850.8330078125 449 846.7269897460938 449 841.6669921875 C 449 836.6069946289062 444.8930053710938 832.5 439.8330078125 832.5 C 434.7730102539062 832.5 430.6669921875 836.6069946289062 430.6669921875 841.6669921875 C 430.6669921875 846.7269897460938 434.7730102539062 850.8330078125 439.8330078125 850.8330078125 Z M 433.9670104980469 841.6669921875 C 433.9670104980469 844.9119873046875 436.5880126953125 847.5330200195312 439.8330078125 847.5330200195312 C 443.0780029296875 847.5330200195312 445.7000122070312 844.9119873046875 445.7000122070312 841.6669921875 C 445.7000122070312 838.4219970703125 443.0780029296875 835.7999877929688 439.8330078125 835.7999877929688 C 436.5880126953125 835.7999877929688 433.9670104980469 838.4219970703125 433.9670104980469 841.6669921875 Z" fill="#9b9b9b" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
-const String _svg_aevnef =
-    '<svg viewBox="830.0 213.1 41.3 26.1" ><path transform="translate(829.63, 212.12)" d="M 20.99930000305176 12.3444995880127 C 20.22520065307617 12.3444995880127 19.46689987182617 12.36789989471436 18.71610069274902 12.39809989929199 L 17.52540016174316 3.418689966201782 L 17.6560001373291 3.387749910354614 L 17.44429969787598 0.9375 L 15.61279964447021 0.9375 L 12.8435001373291 1.109380006790161 L 13.12189960479736 3.691629886627197 L 13.76679992675781 3.716370105743408 L 14.65439987182617 11.54979991912842 L 7.58480978012085 13.56550025939941 L 6.514379978179932 5.592559814453125 L 6.643630027770996 5.552690029144287 L 6.432559967041016 3.102440118789673 L 4.616879940032959 3.102440118789673 L 1.830440044403076 3.274310111999512 L 2.17074990272522 5.809810161590576 L 2.755810022354126 5.864809989929199 L 3.977499961853027 15.56270027160645 C 1.710809946060181 16.74169921875 0.375 18.16559982299805 0.375 19.70420074462891 C 0.375 22.15929985046387 6.023499965667725 27.0625 20.99930000305176 27.0625 C 32.39049911499023 27.0625 41.625 23.76869964599609 41.625 19.70420074462891 C 41.625 15.63969993591309 32.39049911499023 12.3444995880127 20.99930000305176 12.3444995880127 Z M 15.07509994506836 12.14439964294434 C 15.07509994506836 12.14439964294434 15.13360023498535 12.13619995117188 15.22089958190918 12.13619995117188 C 15.4394998550415 12.13619995117188 15.84099960327148 12.18780040740967 15.95919990539551 12.55010032653809 C 16.19709968566895 13.28159999847412 15.52270030975342 13.71399974822998 15.52270030975342 13.71399974822998 L 7.908629894256592 15.98480033874512 L 7.676249980926514 14.25370025634766 L 15.07509994506836 12.14439964294434 Z M 7.097370147705078 23.8484001159668 L 4.769499778747559 6.05456018447876 L 4.957880020141602 6.071750164031982 L 5.848189830780029 5.797440052032471 L 8.324560165405273 24.27809906005859 C 8.039939880371094 24.18390083312988 7.196370124816895 23.88349914550781 7.097370147705078 23.8484001159668 Z M 16.68659973144531 22.03409957885742 L 9.027190208435059 24.31800079345703 L 8.79481029510498 22.58690071105957 L 16.23839950561523 20.46389961242676 C 16.23839950561523 20.46389961242676 16.29680061340332 20.45560073852539 16.38409996032715 20.45560073852539 C 16.6033992767334 20.45560073852539 17.0048999786377 20.50720024108887 17.12249946594238 20.86949920654297 C 17.36039924621582 21.60169982910156 16.68659973144531 22.03409957885742 16.68659973144531 22.03409957885742 Z M 18.38750076293945 25.68540000915527 L 15.76469993591309 3.793370008468628 L 15.92969989776611 3.800250053405762 L 16.85300064086914 3.580250024795532 L 19.77350044250488 25.71089935302734 C 19.34860038757324 25.7047004699707 18.82480049133301 25.6963996887207 18.38750076293945 25.68540000915527 Z" fill="#ffffff" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
-const String _svg_ow8ich =
-    '<svg viewBox="721.4 221.3 15.2 9.6" ><path transform="translate(720.94, 220.91)" d="M 1.169420003890991 0.7191709876060486 C 1.56060004234314 0.3232420086860657 2.199769973754883 0.3228940069675446 2.591379880905151 0.718396008014679 L 8.000009536743164 6.180789947509766 L 13.40859985351562 0.718396008014679 C 13.80020046234131 0.3228940069675446 14.43939971923828 0.3232429921627045 14.83059978485107 0.7191720008850098 L 15.3056001663208 1.199959993362427 C 15.69050025939941 1.589490056037903 15.69050025939941 2.216089963912964 15.3056001663208 2.605609893798828 L 8.000009536743164 9.999950408935547 L 0.6943989992141724 2.605609893798828 C 0.3095490038394928 2.216089963912964 0.3095490038394928 1.589490056037903 0.6944000124931335 1.199959993362427 L 1.169420003890991 0.7191709876060486 Z" fill="#ffffff" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';

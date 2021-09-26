@@ -3,6 +3,7 @@ import 'package:adobe_xd/pinned.dart';
 import './l_k2.dart';
 import 'package:adobe_xd/page_link.dart';
 import './l_k3.dart';
+import './sozdanie_inicistive.dart';
 import './bid.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -141,27 +142,37 @@ class LK1 extends StatelessWidget {
                         Pin(size: 48.0, end: 0.0),
                         child:
                             // Adobe XD layer: 'gr96' (group)
-                            Stack(
-                          children: <Widget>[
-                            Pinned.fromPins(
-                              Pin(start: 0.0, end: 0.0),
-                              Pin(start: 0.0, end: 0.0),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: const Color(0xfff05046),
-                                ),
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(start: 27.4, end: 27.0),
-                              Pin(size: 18.7, middle: 0.5819),
-                              child: SvgPicture.string(
-                                _svg_j8awof,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
+                            PageLink(
+                          links: [
+                            PageLinkInfo(
+                              transition: LinkTransition.Fade,
+                              ease: Curves.easeOut,
+                              duration: 0.3,
+                              pageBuilder: () => SozdanieInicistive(),
                             ),
                           ],
+                          child: Stack(
+                            children: <Widget>[
+                              Pinned.fromPins(
+                                Pin(start: 0.0, end: 0.0),
+                                Pin(start: 0.0, end: 0.0),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xfff05046),
+                                  ),
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(start: 27.4, end: 27.0),
+                                Pin(size: 18.7, middle: 0.5819),
+                                child: SvgPicture.string(
+                                  _svg_j8awof,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ],

@@ -155,6 +155,7 @@ class Registration extends StatelessWidget {
                 PageLink(
               links: [
                 PageLinkInfo(
+                  transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
                   pageBuilder: () => Registration1(),

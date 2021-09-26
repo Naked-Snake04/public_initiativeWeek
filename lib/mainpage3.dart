@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
-import './mainpage4.dart';
+import './bid.dart';
+import './registration.dart';
 import 'package:adobe_xd/page_link.dart';
+import './mainpage4.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Mainpage3 extends StatelessWidget {
@@ -14,6 +16,48 @@ class Mainpage3 extends StatelessWidget {
       backgroundColor: const Color(0xffffffff),
       body: Stack(
         children: <Widget>[
+          Pinned.fromPins(
+            Pin(start: 0.0, end: 0.0),
+            Pin(size: 101.0, start: 5.0),
+            child:
+                // Adobe XD layer: 'WhiteFon' (shape)
+                Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: const AssetImage(''),
+                  fit: BoxFit.fill,
+                ),
+              ),
+            ),
+          ),
+          Pinned.fromPins(
+            Pin(size: 173.0, middle: 0.3543),
+            Pin(size: 61.0, start: 22.0),
+            child: Container(
+              decoration: BoxDecoration(
+                color: const Color(0xffffffff),
+              ),
+            ),
+          ),
+          Pinned.fromPins(
+            Pin(size: 173.0, end: 51.0),
+            Pin(size: 61.0, start: 22.0),
+            child: PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => Registration(),
+                ),
+              ],
+              child: Container(
+                decoration: BoxDecoration(
+                  color: const Color(0xffffffff),
+                ),
+              ),
+            ),
+          ),
           Pinned.fromPins(
             Pin(start: 70.0, end: 70.0),
             Pin(size: 450.0, middle: 0.581),
@@ -241,20 +285,6 @@ class Mainpage3 extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(start: 0.0, end: 0.0),
-            Pin(size: 101.0, start: 5.0),
-            child:
-                // Adobe XD layer: 'WhiteFon' (shape)
-                Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: const AssetImage(''),
-                  fit: BoxFit.fill,
-                ),
-              ),
-            ),
-          ),
-          Pinned.fromPins(
             Pin(size: 127.0, end: 79.0),
             Pin(size: 27.5, start: 36.3),
             child:
@@ -291,10 +321,20 @@ class Mainpage3 extends StatelessWidget {
             Pin(size: 23.4, start: 40.4),
             child:
                 // Adobe XD layer: 'zaiavki' (shape)
-                SvgPicture.string(
-              _svg_lsaosy,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
+                PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => Bid(),
+                ),
+              ],
+              child: SvgPicture.string(
+                _svg_lsaosy,
+                allowDrawingOutsideViewBox: true,
+                fit: BoxFit.fill,
+              ),
             ),
           ),
           Pinned.fromPins(

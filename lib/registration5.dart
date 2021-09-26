@@ -9,7 +9,7 @@ class Registration5 extends StatelessWidget {
   final String volonteer;
   Registration5({
     Key? key,
-    this.volonteer = "Хотите стать волонтёром?",
+    this.volonteer = 'Хотите стать волонтёром?',
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {

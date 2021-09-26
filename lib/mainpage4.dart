@@ -641,7 +641,7 @@ class Mainpage4 extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.0),
                   image: DecorationImage(
-                    image: const AssetImage('assets/images/grau_button.png'),
+                    image: const AssetImage('assets/images/grauButton.png'),
                     fit: BoxFit.fill,
                   ),
                 ),

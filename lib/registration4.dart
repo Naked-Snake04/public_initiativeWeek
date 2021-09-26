@@ -249,7 +249,9 @@ class Registration4 extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => Registration5(),
+                  pageBuilder: () => Registration5(
+                    volonteer: 'Хотите стать волонтёром?',
+                  ),
                 ),
               ],
               child: Container(
@@ -271,7 +273,9 @@ class Registration4 extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => Registration5(),
+                  pageBuilder: () => Registration5(
+                    volonteer: 'Хотите стать волонтёром?',
+                  ),
                 ),
               ],
               child: Text(

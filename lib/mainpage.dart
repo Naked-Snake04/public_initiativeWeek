@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
-import './registration.dart';
-import 'package:adobe_xd/page_link.dart';
-import './bid.dart';
 import './mainpage3.dart';
+import 'package:adobe_xd/page_link.dart';
+import './registration.dart';
+import './bid.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Mainpage extends StatelessWidget {
@@ -26,6 +26,53 @@ class Mainpage extends StatelessWidget {
                 image: DecorationImage(
                   image: const AssetImage('assets/images/whitefon.png'),
                   fit: BoxFit.fill,
+                ),
+              ),
+            ),
+          ),
+          Pinned.fromPins(
+            Pin(size: 487.0, start: 35.0),
+            Pin(size: 66.0, start: 19.0),
+            child: PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => Mainpage3(),
+                ),
+              ],
+              child: Container(
+                decoration: BoxDecoration(
+                  color: const Color(0xffffffff),
+                ),
+              ),
+            ),
+          ),
+          Pinned.fromPins(
+            Pin(size: 173.0, middle: 0.3543),
+            Pin(size: 61.0, start: 22.0),
+            child: Container(
+              decoration: BoxDecoration(
+                color: const Color(0xffffffff),
+              ),
+            ),
+          ),
+          Pinned.fromPins(
+            Pin(size: 173.0, end: 51.0),
+            Pin(size: 61.0, start: 22.0),
+            child: PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => Registration(),
+                ),
+              ],
+              child: Container(
+                decoration: BoxDecoration(
+                  color: const Color(0xffffffff),
                 ),
               ),
             ),
