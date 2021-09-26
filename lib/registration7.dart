@@ -286,16 +286,26 @@ class Registration7 extends StatelessWidget {
           Pinned.fromPins(
             Pin(size: 167.0, start: 268.0),
             Pin(size: 43.0, end: 173.0),
-            child: Text(
-              'Подтвердить',
-              style: TextStyle(
-                fontFamily: 'Segoe UI',
-                fontSize: 32,
-                color: const Color(0xffffffff),
-                letterSpacing: -1,
-                fontWeight: FontWeight.w300,
+            child: PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => Bid(),
+                ),
+              ],
+              child: Text(
+                'Подтвердить',
+                style: TextStyle(
+                  fontFamily: 'Segoe UI',
+                  fontSize: 32,
+                  color: const Color(0xffffffff),
+                  letterSpacing: -1,
+                  fontWeight: FontWeight.w300,
+                ),
+                textAlign: TextAlign.left,
               ),
-              textAlign: TextAlign.left,
             ),
           ),
         ],

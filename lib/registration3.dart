@@ -223,7 +223,9 @@ class Registration3 extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => Registration4(),
+                  pageBuilder: () => Registration4(
+                    OkText: 'Ок',
+                  ),
                 ),
               ],
               child: Container(
@@ -277,11 +279,23 @@ class Registration3 extends StatelessWidget {
             Pin(size: 30.0, middle: 0.7743),
             child:
                 // Adobe XD layer: 'Продолжить' (shape)
-                Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: const AssetImage(''),
-                  fit: BoxFit.fill,
+                PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => Registration4(
+                    OkText: 'Ок',
+                  ),
+                ),
+              ],
+              child: Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: const AssetImage(''),
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
             ),
@@ -291,10 +305,20 @@ class Registration3 extends StatelessWidget {
             Pin(size: 29.6, end: 161.4),
             child:
                 // Adobe XD layer: 'Пропустить' (shape)
-                SvgPicture.string(
-              _svg_z1r0hb,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
+                PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => Registration5(),
+                ),
+              ],
+              child: SvgPicture.string(
+                _svg_z1r0hb,
+                allowDrawingOutsideViewBox: true,
+                fit: BoxFit.fill,
+              ),
             ),
           ),
         ],

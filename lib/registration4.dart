@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import './registration5.dart';
+import 'package:adobe_xd/page_link.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Registration4 extends StatelessWidget {
+  final String OkText;
   Registration4({
     Key? key,
+    this.OkText = 'Ок',
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -180,7 +183,7 @@ class Registration4 extends StatelessWidget {
                 Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: const AssetImage('assets/images/12.png'),
+                  image: const AssetImage('assets/images/telegram.png'),
                   fit: BoxFit.fill,
                 ),
               ),
@@ -240,27 +243,48 @@ class Registration4 extends StatelessWidget {
             Pin(size: 60.0, middle: 0.7971),
             child:
                 // Adobe XD layer: 'Rectangle 97 (2)' (shape)
-                Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(6.0),
-                color: const Color(0xff4a73af),
-                border: Border.all(width: 1.0, color: const Color(0xff4a73af)),
+                PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => Registration5(),
+                ),
+              ],
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(6.0),
+                  color: const Color(0xff4a73af),
+                  border:
+                      Border.all(width: 1.0, color: const Color(0xff4a73af)),
+                ),
               ),
             ),
           ),
           Pinned.fromPins(
             Pin(size: 37.0, start: 325.0),
             Pin(size: 43.0, middle: 0.7927),
-            child: Text(
-              'Ок',
-              style: TextStyle(
-                fontFamily: 'Segoe UI',
-                fontSize: 32,
-                color: const Color(0xffffffff),
-                letterSpacing: -1,
-                fontWeight: FontWeight.w300,
+            child: PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => Registration5(),
+                ),
+              ],
+              child: Text(
+                OkText,
+                style: TextStyle(
+                  fontFamily: 'Segoe UI',
+                  fontSize: 32,
+                  color: const Color(0xffffffff),
+                  letterSpacing: -1,
+                  fontWeight: FontWeight.w300,
+                ),
+                textAlign: TextAlign.left,
               ),
-              textAlign: TextAlign.left,
             ),
           ),
         ],

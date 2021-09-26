@@ -177,10 +177,20 @@ class Registration1 extends StatelessWidget {
             Pin(size: 29.6, middle: 0.6121),
             child:
                 // Adobe XD layer: 'Получить код' (shape)
-                SvgPicture.string(
-              _svg_asf24y,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
+                PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => Registration3(),
+                ),
+              ],
+              child: SvgPicture.string(
+                _svg_asf24y,
+                allowDrawingOutsideViewBox: true,
+                fit: BoxFit.fill,
+              ),
             ),
           ),
           Pinned.fromPins(

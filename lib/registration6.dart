@@ -265,11 +265,22 @@ class Registration6 extends StatelessWidget {
             Pin(size: 60.0, end: 157.5),
             child:
                 // Adobe XD layer: 'Rectangle 97 (2)' (shape)
-                Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(6.0),
-                color: const Color(0xff4a73af),
-                border: Border.all(width: 1.0, color: const Color(0xff4a73af)),
+                PageLink(
+              links: [
+                PageLinkInfo(
+                  transition: LinkTransition.Fade,
+                  ease: Curves.easeOut,
+                  duration: 0.3,
+                  pageBuilder: () => Bid(),
+                ),
+              ],
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(6.0),
+                  color: const Color(0xff4a73af),
+                  border:
+                      Border.all(width: 1.0, color: const Color(0xff4a73af)),
+                ),
               ),
             ),
           ),
