@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
-import './web19203.dart';
+// import './web19203.dart';
 import 'package:adobe_xd/page_link.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -24,7 +24,7 @@ class Registration extends StatelessWidget {
                 PageLinkInfo(
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => Web19203(),
+                  // pageBuilder: () => Web19203(),
                 ),
               ],
               child: Container(
@@ -157,7 +157,7 @@ class Registration extends StatelessWidget {
                 PageLinkInfo(
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => Web19203(),
+                  // pageBuilder: () => Web19203(),
                 ),
               ],
               child: Container(
