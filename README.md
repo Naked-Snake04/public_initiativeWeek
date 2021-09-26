@@ -8,8 +8,11 @@
 Подключить Chrome с помощью команд:
 
 flutter channel beta
+
 flutter upgrade
+
 flutter config --enable-web
+
 flutter doctor -v
 
 И в самом проекте выбрать запуск через Chrome.
