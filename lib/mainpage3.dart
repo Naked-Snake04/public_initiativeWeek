@@ -16,7 +16,7 @@ class Mainpage3 extends StatelessWidget {
         children: <Widget>[
           Pinned.fromPins(
             Pin(start: 70.0, end: 70.0),
-            Pin(size: 450.0, middle: 0.5),
+            Pin(size: 450.0, middle: 0.581),
             child:
                 // Adobe XD layer: 'group' (group)
                 Stack(
@@ -197,7 +197,7 @@ class Mainpage3 extends StatelessWidget {
           ),
           Pinned.fromPins(
             Pin(size: 510.0, start: 143.0),
-            Pin(size: 60.0, middle: 0.6353),
+            Pin(size: 60.0, middle: 0.6853),
             child:
                 // Adobe XD layer: 'group1' (group)
                 PageLink(
@@ -305,7 +305,7 @@ class Mainpage3 extends StatelessWidget {
                 Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: const AssetImage(''),
+                  image: const AssetImage('assets/images/blue_fone.png'),
                   fit: BoxFit.fill,
                 ),
               ),
