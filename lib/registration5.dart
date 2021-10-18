@@ -9,7 +9,7 @@ class Registration5 extends StatelessWidget {
   final String volonteer;
   Registration5({
     Key? key,
-    this.volonteer = 'Хотите стать волонтёром?',
+    this.volonteer = 'Хотите стать волонтером?',
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -206,10 +206,10 @@ class Registration5 extends StatelessWidget {
             Pin(size: 43.0, middle: 0.4195),
             child: Text(
               volonteer,
-              style: TextStyle(
+              style: const TextStyle(
                 fontFamily: 'Segoe UI',
                 fontSize: 32,
-                color: const Color(0xff7094d7),
+                color: Color(0xff7094d7),
                 letterSpacing: -1,
                 fontWeight: FontWeight.w300,
               ),

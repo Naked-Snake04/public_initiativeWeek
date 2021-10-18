@@ -125,18 +125,13 @@ class Registration3 extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(size: 507.0, start: 114.5),
-            Pin(size: 60.0, middle: 0.5294),
-            child:
-                // Adobe XD layer: 'Rectangle 97' (shape)
-                Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(6.0),
-                color: const Color(0xffedf4ff),
-                border: Border.all(width: 1.0, color: const Color(0xff4a73af)),
-              ),
-            ),
-          ),
+              Pin(size: 507.0, start: 114.5), Pin(size: 60.0, middle: 0.5294),
+              child: TextFormField(
+                decoration: const InputDecoration(
+                    border: UnderlineInputBorder(),
+                    labelText: 'Введите номер телефона',
+                    hintText: '+7(___)___-__-__'),
+              )),
           Pinned.fromPins(
             Pin(size: 202.7, start: 138.0),
             Pin(size: 29.6, middle: 0.6121),
@@ -238,17 +233,17 @@ class Registration3 extends StatelessWidget {
               ),
             ),
           ),
-          Pinned.fromPins(
-            Pin(size: 305.2, start: 126.0),
-            Pin(size: 32.7, middle: 0.5315),
-            child:
-                // Adobe XD layer: '+7(___)___-__-__ (1)' (shape)
-                SvgPicture.string(
-              _svg_bx49oc,
-              allowDrawingOutsideViewBox: true,
-              fit: BoxFit.fill,
-            ),
-          ),
+          // Pinned.fromPins(
+          //   Pin(size: 305.2, start: 126.0),
+          //   Pin(size: 32.7, middle: 0.5315),
+          //   child:
+          //       // Adobe XD layer: '+7(___)___-__-__ (1)' (shape)
+          //       SvgPicture.string(
+          //     _svg_bx49oc,
+          //     allowDrawingOutsideViewBox: true,
+          //     fit: BoxFit.fill,
+          //   ),
+          // ),
           Pinned.fromPins(
             Pin(size: 20.0, middle: 0.2),
             Pin(size: 20.0, end: 16.0),

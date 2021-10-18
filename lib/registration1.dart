@@ -137,18 +137,14 @@ class Registration1 extends StatelessWidget {
             ),
           ),
           Pinned.fromPins(
-            Pin(size: 510.0, start: 111.5),
-            Pin(size: 60.0, middle: 0.5294),
-            child:
-                // Adobe XD layer: 'Rectangle 97' (shape)
-                Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(6.0),
-                color: const Color(0xffedf4ff),
-                border: Border.all(width: 1.0, color: const Color(0xff4a73af)),
-              ),
-            ),
-          ),
+              Pin(size: 510.0, start: 111.5), Pin(size: 60.0, middle: 0.5294),
+              child:
+                  // Adobe XD layer: 'Rectangle 97' (shape)
+                  TextFormField(
+                decoration: const InputDecoration(
+                    border: UnderlineInputBorder(),
+                    labelText: 'Введите номер телефона'),
+              )),
           Pinned.fromPins(
             Pin(size: 245.0, start: 114.5),
             Pin(size: 60.0, middle: 0.6123),

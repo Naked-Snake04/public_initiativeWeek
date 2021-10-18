@@ -1,3 +1,4 @@
+import 'package:firstproj/registration1.dart';
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import './mainpage3.dart';
@@ -67,7 +68,7 @@ class Mainpage extends StatelessWidget {
                   transition: LinkTransition.Fade,
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => Registration(),
+                  pageBuilder: () => Registration1(),
                 ),
               ],
               child: Container(
@@ -87,7 +88,7 @@ class Mainpage extends StatelessWidget {
                 PageLinkInfo(
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => Registration(),
+                  pageBuilder: () => Registration1(),
                 ),
               ],
               child: SvgPicture.string(
