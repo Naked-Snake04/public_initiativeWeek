@@ -4,7 +4,7 @@ import './l_k2.dart';
 import 'package:adobe_xd/page_link.dart';
 import './l_k3.dart';
 import './sozdanie_inicistive.dart';
-import './bid.dart';
+//import './bid.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class LK1 extends StatelessWidget {
@@ -196,7 +196,7 @@ class LK1 extends StatelessWidget {
                               transition: LinkTransition.Fade,
                               ease: Curves.easeOut,
                               duration: 0.3,
-                              pageBuilder: () => Bid(),
+                              //pageBuilder: () => Bid(),
                             ),
                           ],
                           child: SvgPicture.string(
