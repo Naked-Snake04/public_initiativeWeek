@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import './registr1.dart';
@@ -6,7 +8,7 @@ import './auntification2.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class auntification1 extends StatelessWidget {
-  auntification1({
+  const auntification1({
     key,
   }) : super(key: key);
   @override
@@ -24,8 +26,8 @@ class auntification1 extends StatelessWidget {
                   Pin(start: 0.0, end: 0.0),
                   Pin(start: 0.0, end: 0.0),
                   child: Container(
-                    decoration: BoxDecoration(
-                      color: const Color(0xff3c64b1),
+                    decoration: const BoxDecoration(
+                      color: Color(0xff3c64b1),
                     ),
                   ),
                 ),
@@ -48,10 +50,9 @@ class auntification1 extends StatelessWidget {
                         child:
                             // Adobe XD layer: 'church' (shape)
                             Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             image: DecorationImage(
-                              image:
-                                  const AssetImage('assets/images/church.jpg'),
+                              image: AssetImage('assets/images/church.jpg'),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -106,8 +107,8 @@ class auntification1 extends StatelessWidget {
                         Pin(size: 55.0, middle: 0.5162),
                         child:
                             // Adobe XD layer: 'rectangle39' (shape)
-                            TextField(
-                          decoration: const InputDecoration(
+                            const TextField(
+                          decoration: InputDecoration(
                               border: OutlineInputBorder(),
                               hintText: '+7(___)___-__-__'),
                         ),
