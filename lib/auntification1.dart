@@ -1,4 +1,4 @@
-// ignore_for_file: camel_case_types, constant_identifier_names
+// ignore_for_file: camel_case_types, prefer_const_constructors_in_immutables, prefer_const_constructors, constant_identifier_names
 
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
@@ -8,7 +8,7 @@ import './auntification2.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class auntification1 extends StatelessWidget {
-  const auntification1({
+  auntification1({
     key,
   }) : super(key: key);
   @override
@@ -26,8 +26,8 @@ class auntification1 extends StatelessWidget {
                   Pin(start: 0.0, end: 0.0),
                   Pin(start: 0.0, end: 0.0),
                   child: Container(
-                    decoration: const BoxDecoration(
-                      color: Color(0xff3c64b1),
+                    decoration: BoxDecoration(
+                      color: const Color(0xff3c64b1),
                     ),
                   ),
                 ),
@@ -50,9 +50,10 @@ class auntification1 extends StatelessWidget {
                         child:
                             // Adobe XD layer: 'church' (shape)
                             Container(
-                          decoration: const BoxDecoration(
+                          decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/church.jpg'),
+                              image:
+                                  const AssetImage('assets/images/church.jpg'),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -107,8 +108,8 @@ class auntification1 extends StatelessWidget {
                         Pin(size: 55.0, middle: 0.5162),
                         child:
                             // Adobe XD layer: 'rectangle39' (shape)
-                            const TextField(
-                          decoration: InputDecoration(
+                            TextField(
+                          decoration: const InputDecoration(
                               border: OutlineInputBorder(),
                               hintText: '+7(___)___-__-__'),
                         ),
