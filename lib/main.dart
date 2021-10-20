@@ -1,8 +1,9 @@
 //import 'package:cloud_firestore/cloud_firestore.dart';
 //import 'package:firebase_core/firebase_core.dart';
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'auntification1.dart';
-import 'personal.dart';
 
 void main() {
   runApp(MyApp());
