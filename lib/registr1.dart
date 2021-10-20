@@ -1,4 +1,4 @@
-// ignore_for_file: camel_case_types, prefer_const_constructors_in_immutables, prefer_const_constructors
+// ignore_for_file: camel_case_types, prefer_const_constructors_in_immutables, prefer_const_constructors, constant_identifier_names
 
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
