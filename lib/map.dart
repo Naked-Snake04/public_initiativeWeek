@@ -1,9 +1,10 @@
-// ignore_for_file: camel_case_types, prefer_const_constructors_in_immutables, prefer_const_constructors, constant_identifier_names
+// ignore_for_file: camel_case_types, prefer_const_constructors_in_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import './personal.dart';
 import 'package:adobe_xd/page_link.dart';
+import './trouble_field.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class map extends StatelessWidget {
@@ -105,13 +106,13 @@ class map extends StatelessWidget {
                 ),
                 Pinned.fromPins(
                   Pin(start: 0.0, end: 0.0),
-                  Pin(size: 500.0, start: 100.0),
+                  Pin(size: 450.0, start: 100.0),
                   child:
                       // Adobe XD layer: 'rect64' (shape)
                       Container(
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: const AssetImage(''),
+                        image: const AssetImage('assets/images/bigmap.png'),
                         fit: BoxFit.fill,
                       ),
                     ),
@@ -120,20 +121,38 @@ class map extends StatelessWidget {
                 Pinned.fromPins(
                   Pin(size: 258.0, end: 32.0),
                   Pin(size: 48.5, start: 123.7),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(4.16),
-                      color: const Color(0xfff05046),
+                  child: PageLink(
+                    links: [
+                      PageLinkInfo(
+                        transition: LinkTransition.Fade,
+                        ease: Curves.easeOut,
+                        duration: 0.3,
+                        pageBuilder: () => trouble_field(),
+                      ),
+                    ],
+                    child: Stack(
+                      children: <Widget>[
+                        Pinned.fromPins(
+                          Pin(start: 0.0, end: 0.0),
+                          Pin(start: 0.0, end: 0.0),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(4.16),
+                              color: const Color(0xfff05046),
+                            ),
+                          ),
+                        ),
+                        Pinned.fromPins(
+                          Pin(start: 45.3, end: 45.0),
+                          Pin(size: 15.4, middle: 0.5657),
+                          child: SvgPicture.string(
+                            _svg_q0rdz,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                      ],
                     ),
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 167.8, end: 77.0),
-                  Pin(size: 15.4, start: 142.5),
-                  child: SvgPicture.string(
-                    _svg_q0rdz,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
                   ),
                 ),
                 Pinned.fromPins(
