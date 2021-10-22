@@ -1,7 +1,10 @@
+// ignore_for_file: camel_case_types, prefer_const_constructors_in_immutables, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import './trouble_field.dart';
 import 'package:adobe_xd/page_link.dart';
+import './Volonteer_card.dart';
 import './map.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -57,6 +60,7 @@ class personal extends StatelessWidget {
                   Pin(size: 400.0, start: 120.0),
                   child:
                       // Adobe XD layer: 'ellipse16' (shape)
+
                       Container(
                     decoration: BoxDecoration(
                       borderRadius:
@@ -161,10 +165,20 @@ class personal extends StatelessWidget {
                 Pinned.fromPins(
                   Pin(size: 124.5, middle: 0.6413),
                   Pin(size: 22.2, middle: 0.4053),
-                  child: SvgPicture.string(
-                    _svg_jk4pu1,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
+                  child: PageLink(
+                    links: [
+                      PageLinkInfo(
+                        transition: LinkTransition.Fade,
+                        ease: Curves.easeOut,
+                        duration: 0.3,
+                        pageBuilder: () => Volonteer_card(),
+                      ),
+                    ],
+                    child: SvgPicture.string(
+                      _svg_jk4pu1,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
                   ),
                 ),
                 Pinned.fromPins(
