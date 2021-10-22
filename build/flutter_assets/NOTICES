@@ -6001,6 +6001,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 --------------------------------------------------------------------------------
 flutter_lints
+flutter_plugin_android_lifecycle
+google_maps_flutter
 google_maps_flutter_platform_interface
 plugin_platform_interface
 
