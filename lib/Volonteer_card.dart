@@ -19,12 +19,12 @@ class Volonteer_card extends StatelessWidget {
         children: <Widget>[
           Pinned.fromPins(
             Pin(start: 0.0, end: 0.0),
-            Pin(start: 0.0, end: 0.0),
+            Pin(start: 0.0, end: -46.0),
             child: Stack(
               children: <Widget>[
                 Pinned.fromPins(
                   Pin(start: 0.0, end: 0.0),
-                  Pin(start: 0.0, end: 0.0),
+                  Pin(start: 0.0, end: 46.0),
                   child: Container(
                     decoration: BoxDecoration(
                       color: const Color(0xfff3f5f8),
@@ -54,8 +54,10 @@ class Volonteer_card extends StatelessWidget {
                 ),
                 Pinned.fromPins(
                   Pin(size: 600.0, start: 0.0),
-                  Pin(size: 776.0, end: 0.0),
-                  child: Container(
+                  Pin(size: 726.0, end: 0.0),
+                  child:
+                      // Adobe XD layer: 'rect110' (shape)
+                      Container(
                     decoration: BoxDecoration(
                       color: const Color(0xffffffff),
                     ),
@@ -63,7 +65,7 @@ class Volonteer_card extends StatelessWidget {
                 ),
                 Pinned.fromPins(
                   Pin(start: 0.0, end: 0.0),
-                  Pin(size: 24.0, middle: 0.2652),
+                  Pin(size: 24.0, middle: 0.2541),
                   child: Container(
                     decoration: BoxDecoration(
                       color: const Color(0xffffffff),
@@ -173,7 +175,7 @@ class Volonteer_card extends StatelessWidget {
                 ),
                 Pinned.fromPins(
                   Pin(size: 70.8, start: 76.2),
-                  Pin(size: 109.6, end: 98.5),
+                  Pin(size: 109.6, end: 144.5),
                   child: SvgPicture.string(
                     _svg_bes5w,
                     allowDrawingOutsideViewBox: true,
@@ -182,7 +184,7 @@ class Volonteer_card extends StatelessWidget {
                 ),
                 Pinned.fromPins(
                   Pin(size: 357.0, start: 169.1),
-                  Pin(size: 52.0, end: 96.6),
+                  Pin(size: 52.0, end: 142.6),
                   child: SvgPicture.string(
                     _svg_ec2sq5,
                     allowDrawingOutsideViewBox: true,
@@ -209,7 +211,7 @@ class Volonteer_card extends StatelessWidget {
                 ),
                 Pinned.fromPins(
                   Pin(size: 1238.0, end: 50.0),
-                  Pin(size: 75.0, middle: 0.3821),
+                  Pin(size: 75.0, middle: 0.3654),
                   child: Stack(
                     children: <Widget>[
                       Pinned.fromPins(
@@ -272,7 +274,7 @@ class Volonteer_card extends StatelessWidget {
                 ),
                 Pinned.fromPins(
                   Pin(size: 1238.0, end: 50.0),
-                  Pin(size: 75.0, middle: 0.4726),
+                  Pin(size: 75.0, middle: 0.452),
                   child: Stack(
                     children: <Widget>[
                       Pinned.fromPins(
@@ -335,7 +337,7 @@ class Volonteer_card extends StatelessWidget {
                 ),
                 Pinned.fromPins(
                   Pin(size: 1238.0, end: 50.0),
-                  Pin(size: 75.0, middle: 0.5632),
+                  Pin(size: 75.0, middle: 0.5385),
                   child: Stack(
                     children: <Widget>[
                       Pinned.fromPins(
@@ -398,7 +400,7 @@ class Volonteer_card extends StatelessWidget {
                 ),
                 Pinned.fromPins(
                   Pin(size: 341.0, middle: 0.4003),
-                  Pin(size: 2.0, middle: 0.3386),
+                  Pin(size: 2.0, middle: 0.3247),
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(1.0),
@@ -408,7 +410,7 @@ class Volonteer_card extends StatelessWidget {
                 ),
                 Pinned.fromPins(
                   Pin(size: 259.5, middle: 0.3885),
-                  Pin(size: 22.2, middle: 0.3202),
+                  Pin(size: 22.2, middle: 0.3068),
                   child: SvgPicture.string(
                     _svg_zdl620,
                     allowDrawingOutsideViewBox: true,
@@ -417,7 +419,7 @@ class Volonteer_card extends StatelessWidget {
                 ),
                 Pinned.fromPins(
                   Pin(size: 460.0, start: 70.0),
-                  Pin(size: 259.0, middle: 0.4677),
+                  Pin(size: 259.0, middle: 0.4429),
                   child: Stack(
                     children: <Widget>[
                       Pinned.fromPins(
@@ -447,7 +449,7 @@ class Volonteer_card extends StatelessWidget {
                 ),
                 Pinned.fromPins(
                   Pin(size: 224.2, start: 103.7),
-                  Pin(size: 25.6, middle: 0.5345),
+                  Pin(size: 25.6, middle: 0.5122),
                   child: Stack(
                     children: <Widget>[
                       Pinned.fromPins(
@@ -464,7 +466,7 @@ class Volonteer_card extends StatelessWidget {
                 ),
                 Pinned.fromPins(
                   Pin(size: 286.1, start: 102.9),
-                  Pin(size: 22.3, middle: 0.3863),
+                  Pin(size: 22.3, middle: 0.3702),
                   child: Stack(
                     children: <Widget>[
                       Pinned.fromPins(
@@ -481,7 +483,7 @@ class Volonteer_card extends StatelessWidget {
                 ),
                 Pinned.fromPins(
                   Pin(size: 111.7, middle: 0.2131),
-                  Pin(size: 18.5, middle: 0.4746),
+                  Pin(size: 18.5, middle: 0.4549),
                   child: Stack(
                     children: <Widget>[
                       Pinned.fromPins(
@@ -498,7 +500,7 @@ class Volonteer_card extends StatelessWidget {
                 ),
                 Pinned.fromPins(
                   Pin(size: 100.0, start: 102.0),
-                  Pin(size: 48.0, middle: 0.4428),
+                  Pin(size: 48.0, middle: 0.4239),
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20.0),
@@ -508,7 +510,7 @@ class Volonteer_card extends StatelessWidget {
                 ),
                 Pinned.fromPins(
                   Pin(size: 16.0, start: 122.0),
-                  Pin(size: 8.0, middle: 0.445),
+                  Pin(size: 8.0, middle: 0.4267),
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4.0),
@@ -518,7 +520,7 @@ class Volonteer_card extends StatelessWidget {
                 ),
                 Pinned.fromPins(
                   Pin(size: 22.0, start: 157.0),
-                  Pin(size: 8.0, middle: 0.4375),
+                  Pin(size: 8.0, middle: 0.4195),
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4.0),
@@ -528,7 +530,7 @@ class Volonteer_card extends StatelessWidget {
                 ),
                 Pinned.fromPins(
                   Pin(size: 22.0, start: 157.0),
-                  Pin(size: 8.0, middle: 0.4524),
+                  Pin(size: 8.0, middle: 0.4338),
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4.0),
@@ -538,7 +540,7 @@ class Volonteer_card extends StatelessWidget {
                 ),
                 Pinned.fromPins(
                   Pin(size: 69.1, start: 103.3),
-                  Pin(size: 11.7, middle: 0.5639),
+                  Pin(size: 11.7, middle: 0.5407),
                   child: Stack(
                     children: <Widget>[
                       Pinned.fromPins(
