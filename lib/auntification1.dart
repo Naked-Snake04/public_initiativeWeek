@@ -1,9 +1,16 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import './registr1.dart';
 import 'package:adobe_xd/page_link.dart';
 import './auntification2.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+final FirebaseAuth _auth = FirebaseAuth.instance;
+final _scaffoldKey = GlobalKey<ScaffoldState>();
+
+final TextEditingController _phoneNumberController = TextEditingController();
+final TextEditingController _smsController = TextEditingController();
 
 class auntification1 extends StatelessWidget {
   auntification1({
@@ -106,7 +113,8 @@ class auntification1 extends StatelessWidget {
                         Pin(size: 55.0, middle: 0.5162),
                         child:
                             // Adobe XD layer: 'rectangle39' (shape)
-                            const TextField(
+                            TextFormField(
+                          controller: _phoneNumberController,
                           decoration: InputDecoration(
                               border: OutlineInputBorder(),
                               hintText: '+7(___)___-__-__'),
@@ -157,49 +165,52 @@ class auntification1 extends StatelessWidget {
               fit: BoxFit.fill,
             ),
           ),
-          Pinned.fromPins(
-            Pin(size: 245.0, middle: 0.2961),
-            Pin(size: 48.0, middle: 0.7452),
-            child:
-                // Adobe XD layer: 'group74' (group)
-                Stack(
-              children: <Widget>[
-                Pinned.fromPins(
-                  Pin(start: 0.0, end: 0.0),
-                  Pin(start: 0.0, end: 0.0),
-                  child:
-                      // Adobe XD layer: 'rect40' (shape)
-                      PageLink(
-                    links: [
-                      PageLinkInfo(
-                        transition: LinkTransition.SlideLeft,
-                        ease: Curves.linear,
-                        duration: 0.3,
-                        pageBuilder: () => auntification2(),
-                      ),
-                    ],
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(3.0),
-                        color: const Color(0xff4a73af),
-                        border: Border.all(
-                            width: 1.0, color: const Color(0xff4a73af)),
+          Container(
+            child: Pinned.fromPins(
+              Pin(size: 245.0, middle: 0.2961),
+              Pin(size: 48.0, middle: 0.7452),
+              child:
+                  // Adobe XD layer: 'group74' (group)
+                  Stack(
+                children: <Widget>[
+                  Pinned.fromPins(
+                    Pin(start: 0.0, end: 0.0),
+                    Pin(start: 0.0, end: 0.0),
+                    child:
+                        // Adobe XD layer: 'rect40' (shape)
+                        PageLink(
+                      //  verifyPhoneNumber();
+                      links: [
+                        PageLinkInfo(
+                          transition: LinkTransition.SlideLeft,
+                          ease: Curves.linear,
+                          duration: 0.3,
+                          pageBuilder: () => auntification2(),
+                        ),
+                      ],
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(3.0),
+                          color: const Color(0xff4a73af),
+                          border: Border.all(
+                              width: 1.0, color: const Color(0xff4a73af)),
+                        ),
                       ),
                     ),
                   ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 94.1, middle: 0.5022),
-                  Pin(size: 14.6, middle: 0.5521),
-                  child:
-                      // Adobe XD layer: 'kontur73' (shape)
-                      SvgPicture.string(
-                    _svg_ar4,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
+                  Pinned.fromPins(
+                    Pin(size: 94.1, middle: 0.5022),
+                    Pin(size: 14.6, middle: 0.5521),
+                    child:
+                        // Adobe XD layer: 'kontur73' (shape)
+                        SvgPicture.string(
+                      _svg_ar4,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ],
@@ -207,6 +218,8 @@ class auntification1 extends StatelessWidget {
     );
   }
 }
+
+void verifyPhoneNumber() async {}
 
 const String _svg_cq4uoz =
     '<svg viewBox="0.0 0.0 683.0 765.0" ><path transform="translate(-277.0, -157.0)" d="M 277 177 C 277 165.9539947509766 285.9540100097656 157 297 157 L 960 157 L 960 922 L 297 922 C 285.9540100097656 922 277 913.0460205078125 277 902 L 277 177 Z" fill="#ffffff" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
