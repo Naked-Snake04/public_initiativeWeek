@@ -5,6 +5,8 @@ import 'package:adobe_xd/pinned.dart';
 import './trouble_field.dart';
 import 'package:adobe_xd/page_link.dart';
 import './Volonteer_card.dart';
+import './MyInitiative.dart';
+import './MyApplications.dart';
 import './map.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -60,7 +62,6 @@ class personal extends StatelessWidget {
                   Pin(size: 400.0, start: 120.0),
                   child:
                       // Adobe XD layer: 'ellipse16' (shape)
-
                       Container(
                     decoration: BoxDecoration(
                       borderRadius:
@@ -184,10 +185,20 @@ class personal extends StatelessWidget {
                 Pinned.fromPins(
                   Pin(size: 190.5, middle: 0.4431),
                   Pin(size: 20.8, middle: 0.405),
-                  child: SvgPicture.string(
-                    _svg_fr2udd,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
+                  child: PageLink(
+                    links: [
+                      PageLinkInfo(
+                        transition: LinkTransition.Fade,
+                        ease: Curves.easeOut,
+                        duration: 0.3,
+                        pageBuilder: () => MyInitiative(),
+                      ),
+                    ],
+                    child: SvgPicture.string(
+                      _svg_fr2udd,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
                   ),
                 ),
                 Pinned.fromPins(
@@ -202,10 +213,20 @@ class personal extends StatelessWidget {
                 Pinned.fromPins(
                   Pin(size: 129.6, middle: 0.246),
                   Pin(size: 17.3, middle: 0.4036),
-                  child: SvgPicture.string(
-                    _svg_un2nkn,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
+                  child: PageLink(
+                    links: [
+                      PageLinkInfo(
+                        transition: LinkTransition.Fade,
+                        ease: Curves.easeOut,
+                        duration: 0.3,
+                        pageBuilder: () => MyApplications(),
+                      ),
+                    ],
+                    child: SvgPicture.string(
+                      _svg_un2nkn,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
                   ),
                 ),
                 Pinned.fromPins(
