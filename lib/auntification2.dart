@@ -1,5 +1,7 @@
 // ignore_for_file: camel_case_types, prefer_const_constructors_in_immutables, prefer_const_constructors, constant_identifier_names
 
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:adobe_xd/pinned.dart';
@@ -12,6 +14,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 final TextEditingController _smsController = TextEditingController();
 
 class auntification2 extends StatelessWidget {
+  ConfirmationResult confirmationResult;
+  auntification2({Key? key, required this.confirmationResult})
+      : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -121,47 +126,44 @@ class auntification2 extends StatelessWidget {
                                     Pin(size: 48.0, end: 64.0),
                                     child: Container(
                                       child: MaterialButton(
-                                        onPressed: () async => {smschek()},
-                                        child: PageLink(
-                                          links: [
-                                            PageLinkInfo(
-                                              transition: LinkTransition.Fade,
-                                              ease: Curves.easeOut,
-                                              duration: 0.3,
-                                              pageBuilder: () => personal(),
+                                        onPressed: () async => {
+                                          smschek(),
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      personal()))
+                                        },
+                                        child: Stack(
+                                          children: <Widget>[
+                                            Pinned.fromPins(
+                                              Pin(start: 0.0, end: 0.0),
+                                              Pin(start: 0.0, end: 0.0),
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          3.0),
+                                                  color:
+                                                      const Color(0xff4a73af),
+                                                  border: Border.all(
+                                                      width: 1.0,
+                                                      color: const Color(
+                                                          0xff4a73af)),
+                                                ),
+                                              ),
+                                            ),
+                                            Pinned.fromPins(
+                                              Pin(size: 98.2, middle: 0.5023),
+                                              Pin(size: 14.6, middle: 0.5521),
+                                              child: SvgPicture.string(
+                                                _svg_dq3pvr,
+                                                allowDrawingOutsideViewBox:
+                                                    true,
+                                                fit: BoxFit.fill,
+                                              ),
                                             ),
                                           ],
-                                          child: Stack(
-                                            children: <Widget>[
-                                              Pinned.fromPins(
-                                                Pin(start: 0.0, end: 0.0),
-                                                Pin(start: 0.0, end: 0.0),
-                                                child: Container(
-                                                  decoration: BoxDecoration(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            3.0),
-                                                    color:
-                                                        const Color(0xff4a73af),
-                                                    border: Border.all(
-                                                        width: 1.0,
-                                                        color: const Color(
-                                                            0xff4a73af)),
-                                                  ),
-                                                ),
-                                              ),
-                                              Pinned.fromPins(
-                                                Pin(size: 98.2, middle: 0.5023),
-                                                Pin(size: 14.6, middle: 0.5521),
-                                                child: SvgPicture.string(
-                                                  _svg_dq3pvr,
-                                                  allowDrawingOutsideViewBox:
-                                                      true,
-                                                  fit: BoxFit.fill,
-                                                ),
-                                              ),
-                                            ],
-                                          ),
                                         ),
                                       ),
                                     ),
@@ -231,7 +233,7 @@ class auntification2 extends StatelessWidget {
 
   smschek() async {
     UserCredential userCredential =
-        await auntification1.confirmationResult.confirm('123456');
+        await confirmationResult.confirm(_smsController.text);
   }
 }
 

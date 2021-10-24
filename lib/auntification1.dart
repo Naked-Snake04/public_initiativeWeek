@@ -186,7 +186,8 @@ class auntification1 extends StatelessWidget {
                               await auth.signInWithPhoneNumber(
                                   _phoneNumberController.text);
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => auntification2()));
+                              builder: (context) => auntification2(
+                                  confirmationResult: confirmationResult)));
                         } catch (e) {}
                       },
                       // Adobe XD layer: 'rect40' (shape)
