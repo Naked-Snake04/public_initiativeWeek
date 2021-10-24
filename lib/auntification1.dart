@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
@@ -6,18 +8,19 @@ import 'package:adobe_xd/page_link.dart';
 import './auntification2.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-final FirebaseAuth _auth = FirebaseAuth.instance;
-final _scaffoldKey = GlobalKey<ScaffoldState>();
+final FirebaseAuth auth = FirebaseAuth.instance;
 
 final TextEditingController _phoneNumberController = TextEditingController();
-final TextEditingController _smsController = TextEditingController();
 
 class auntification1 extends StatelessWidget {
+  static var confirmationResult;
+
   auntification1({
     key,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    ConfirmationResult confirmationResult;
     return Scaffold(
       backgroundColor: const Color(0xffffffff),
       body: Stack(
@@ -165,29 +168,29 @@ class auntification1 extends StatelessWidget {
               fit: BoxFit.fill,
             ),
           ),
-          Container(
-            child: Pinned.fromPins(
-              Pin(size: 245.0, middle: 0.2961),
-              Pin(size: 48.0, middle: 0.7452),
-              child:
-                  // Adobe XD layer: 'group74' (group)
-                  Stack(
-                children: <Widget>[
-                  Pinned.fromPins(
-                    Pin(start: 0.0, end: 0.0),
-                    Pin(start: 0.0, end: 0.0),
-                    child:
-                        // Adobe XD layer: 'rect40' (shape)
-                        PageLink(
-                      //  verifyPhoneNumber();
-                      links: [
-                        PageLinkInfo(
-                          transition: LinkTransition.SlideLeft,
-                          ease: Curves.linear,
-                          duration: 0.3,
-                          pageBuilder: () => auntification2(),
-                        ),
-                      ],
+          Pinned.fromPins(
+            Pin(size: 245.0, middle: 0.2961),
+            Pin(size: 48.0, middle: 0.7452),
+            child:
+                // Adobe XD layer: 'group74' (group)
+                Stack(
+              children: <Widget>[
+                Pinned.fromPins(
+                  Pin(start: 0.0, end: 0.0),
+                  Pin(start: 0.0, end: 0.0),
+                  child: Container(
+                    child: MaterialButton(
+                      onPressed: () async {
+                        try {
+                          ConfirmationResult confirmationResult =
+                              await auth.signInWithPhoneNumber(
+                                  _phoneNumberController.text);
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => auntification2()));
+                        } catch (e) {}
+                      },
+                      // Adobe XD layer: 'rect40' (shape)
+
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(3.0),
@@ -198,19 +201,19 @@ class auntification1 extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Pinned.fromPins(
-                    Pin(size: 94.1, middle: 0.5022),
-                    Pin(size: 14.6, middle: 0.5521),
-                    child:
-                        // Adobe XD layer: 'kontur73' (shape)
-                        SvgPicture.string(
-                      _svg_ar4,
-                      allowDrawingOutsideViewBox: true,
-                      fit: BoxFit.fill,
-                    ),
+                ),
+                Pinned.fromPins(
+                  Pin(size: 94.1, middle: 0.5022),
+                  Pin(size: 14.6, middle: 0.5521),
+                  child:
+                      // Adobe XD layer: 'kontur73' (shape)
+                      SvgPicture.string(
+                    _svg_ar4,
+                    allowDrawingOutsideViewBox: true,
+                    fit: BoxFit.fill,
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ],
@@ -219,7 +222,11 @@ class auntification1 extends StatelessWidget {
   }
 }
 
-void verifyPhoneNumber() async {}
+verifyPhoneNumber() async {
+  //ConfirmationResult confirmationResult =await auth.signInWithPhoneNumber(_phoneNumberController.text);
+
+  //UserCredential userCredential = await confirmationResult.confirm('123456');
+}
 
 const String _svg_cq4uoz =
     '<svg viewBox="0.0 0.0 683.0 765.0" ><path transform="translate(-277.0, -157.0)" d="M 277 177 C 277 165.9539947509766 285.9540100097656 157 297 157 L 960 157 L 960 922 L 297 922 C 285.9540100097656 922 277 913.0460205078125 277 902 L 277 177 Z" fill="#ffffff" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
