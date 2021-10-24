@@ -47,5 +47,5 @@ app.*.map.json
 
 /ios/
 /android/   
-build/
+/build/
 neededText.txt
