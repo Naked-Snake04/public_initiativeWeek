@@ -33,6 +33,15 @@ class trouble_field extends StatelessWidget {
                   ),
                 ),
                 Pinned.fromPins(
+                  Pin(size: 900.1, end: 30.0),
+                  Pin(size: 500.0, start: 100.0),
+                  child:
+                      // Adobe XD layer: 'rect102' (shape)
+                      GoogleMap(
+                          mapType: MapType.normal,
+                          initialCameraPosition: Position),
+                ),
+                Pinned.fromPins(
                   Pin(start: 0.0, end: 0.0),
                   Pin(size: 100.0, start: 0.0),
                   child: Container(
@@ -148,8 +157,17 @@ class trouble_field extends StatelessWidget {
                   child:
                       // Adobe XD layer: 'rect96' (shape)
                       TextField(
-                    decoration: const InputDecoration(
-                        border: OutlineInputBorder(),
+                    style: TextStyle(height: 2.0),
+                    textAlign: TextAlign.justify,
+                    decoration: InputDecoration(
+                        // contentPadding: EdgeInsets.symmetric(vertical: 50.0),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(15),
+                          // borderSide: BorderSide(
+                          //   width: 0,
+                          //   style: BorderStyle.none,
+                          // ),
+                        ),
                         hintText: 'Выберете категорию'),
                   ),
                 ),
@@ -159,8 +177,11 @@ class trouble_field extends StatelessWidget {
                   child:
                       // Adobe XD layer: 'rect97' (shape)
                       TextField(
-                    decoration: const InputDecoration(
-                        border: OutlineInputBorder(),
+                    style: TextStyle(height: 2.0),
+                    textAlign: TextAlign.justify,
+                    decoration: InputDecoration(
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(15)),
                         hintText: 'Местоположение'),
                   ),
                 ),
@@ -170,8 +191,12 @@ class trouble_field extends StatelessWidget {
                   child:
                       // Adobe XD layer: 'rect98' (shape)
                       TextField(
-                    decoration: const InputDecoration(
-                        border: OutlineInputBorder(), hintText: 'Заголовок'),
+                    style: TextStyle(height: 2.0),
+                    textAlign: TextAlign.justify,
+                    decoration: InputDecoration(
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(15)),
+                        hintText: 'Заголовок'),
                   ),
                 ),
                 Pinned.fromPins(
@@ -206,9 +231,13 @@ class trouble_field extends StatelessWidget {
                   child:
                       // Adobe XD layer: 'rect101' (shape)
                       TextField(
-                    decoration: const InputDecoration(
-                        contentPadding: EdgeInsets.symmetric(vertical: 145.0),
-                        border: OutlineInputBorder(),
+                    style: TextStyle(height: 2.0),
+                    textAlign: TextAlign.start,
+                    decoration: InputDecoration(
+                        contentPadding: const EdgeInsets.symmetric(
+                            vertical: 140.0, horizontal: 5),
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(15)),
                         hintText: 'Краткое описание'),
                   ),
                 ),
@@ -229,15 +258,6 @@ class trouble_field extends StatelessWidget {
                     allowDrawingOutsideViewBox: true,
                     fit: BoxFit.fill,
                   ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 930.0, end: 0.0),
-                  Pin(size: 500.0, start: 100.0),
-                  child:
-                      // Adobe XD layer: 'rect102' (shape)
-                      GoogleMap(
-                          mapType: MapType.normal,
-                          initialCameraPosition: Position),
                 ),
                 Pinned.fromPins(
                   Pin(size: 34.0, middle: 0.2635),
