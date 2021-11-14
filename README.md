@@ -16,3 +16,5 @@ flutter config --enable-web
 flutter doctor -v
 
 И в самом проекте выбрать запуск через Chrome.
+
+Телеграм-бот: @InitCity_bot
