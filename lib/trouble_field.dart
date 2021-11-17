@@ -232,10 +232,12 @@ class trouble_field extends StatelessWidget {
                       // Adobe XD layer: 'rect101' (shape)
                       TextField(
                     style: TextStyle(height: 2.0),
-                    textAlign: TextAlign.start,
+                    textAlign: TextAlign.left,
+                    textAlignVertical: TextAlignVertical.top,
                     decoration: InputDecoration(
-                        contentPadding: const EdgeInsets.symmetric(
-                            vertical: 140.0, horizontal: 5),
+                        isDense: true,
+                        contentPadding:
+                            const EdgeInsets.fromLTRB(10, 10, 10, 250),
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(15)),
                         hintText: 'Краткое описание'),
